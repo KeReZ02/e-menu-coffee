@@ -1,0 +1,6 @@
+export const GET_CATEGORIES = 'GET_CATEGORIES';
+export const GET_CARDS = 'GET_CARDS';
+export const GET_SEARCH = 'GET_SEARCH';
+export const ADD_TO_BASKET = 'ADD_TO_BASKET';
+export const DELETE_FROM_BASKET = 'DELETE_FROM_BASKET';
+export const DECREASE_QUANTITY = 'DECREASE_QUANTITY';

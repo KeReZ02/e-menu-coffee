@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Kameron:wght@400;700&family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Kameron:wght@400;700&family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+html[data-theme='dark'] {
+  --input-background-color: #8E8E8E;
+  --background-color: #171717;
+  --card-background-color: black;
+  --placeholder-color: #FFFFFF;
+}
+
+html[data-theme='light'] {
+  --input-background-color: #F5E9E1;;
+  --background-color: #FFF3E8;
+  --card-background-color: white;
+  --placeholder-color: #000000;
+}

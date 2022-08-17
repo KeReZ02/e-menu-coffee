@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Forum&family=Kameron:wght@400;700&family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Forum&family=Kameron:wght@400;700&family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+#root {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+body, html {
+  transition: 0.2s;
+  background-color: var(--background-color);
+}
+
+html[data-theme=dark] {
+  --input-background-color: #8E8E8E;
+  --background-color: #171717;
+  --card-background-color: black;
+  --placeholder-color: #FFFFFF;
+}
+
+html[data-theme=light] {
+  --input-background-color: #F5E9E1;
+  --background-color: #FFF3E8;
+  --card-background-color: white;
+  --placeholder-color: #000000;
+}
+
+#header {
+  position: relative;
+}
+#header .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem 0;
+}
+#header .header__link {
+  width: 20%;
+  animation: active 1.5s infinite;
+}
+#header .header__link__logo {
+  width: 100%;
+}
+#header .header .active {
+  animation: active 2s infinite;
+}
+@keyframes active {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.97);
+  }
+}
+#header .header__search {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--input-background-color);
+  border-radius: 7px;
+  padding: 0.2rem 0;
+}
+#header .header__search__item {
+  width: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+}
+#header .header__search__item :hover {
+  cursor: pointer;
+}
+#header .header__search__item__icon {
+  font-size: 1.5rem;
+}
+#header .header__search__input {
+  width: 100%;
+  background: transparent;
+  padding-left: 1vw;
+  border: none;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #E6AC77;
+}
+#header .header__search__input::placeholder {
+  color: var(--placeholder-color);
+}
+#header .header__elem {
+  position: relative;
+  width: 1.875rem;
+}
+#header .header__elem__icon {
+  width: 100%;
+  cursor: pointer;
+}
+#header .header__elem__span {
+  padding: 0.1rem 0.44rem;
+  border-radius: 50%;
+  background: #E6AC77;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  top: -0.6rem;
+  right: -1.2rem;
+  z-index: 1;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/*# sourceMappingURL=Header.css.map */

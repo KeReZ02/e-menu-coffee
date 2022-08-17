@@ -1,0 +1,10 @@
+@import "../../style/Variables";
+@import "../../style/Reset";
+@import "../../style/Media";
+
+.added {
+  @include par;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 0.7rem;
+}
