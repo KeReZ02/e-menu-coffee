@@ -1,8 +1,18 @@
-.category {
+.hero {
   display: flex;
+  justify-content: center;
   flex-direction: row;
-  justify-content: space-between;
   flex-wrap: wrap;
+}
+
+
+.category {
+   &-global {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
   &-card {
     width: 250px;
     margin: 20px;
@@ -14,6 +24,19 @@
   }
   &-title {
     margin-top: -40px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+  }
+
+}
+.category2{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+
+  &-title {
     text-align: center;
     font-weight: 600;
     font-size: 18px;

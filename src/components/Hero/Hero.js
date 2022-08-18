@@ -13,7 +13,9 @@ const Home = () => {
         <>
             <section id="hero">
                 <div className="container">
+                    <div className="hero">
                     {categories.map(el => (<CategoryCard cat={el} key={el.id}/>))}
+                </div>
                 </div>
             </section>
         </>

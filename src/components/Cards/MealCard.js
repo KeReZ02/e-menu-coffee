@@ -17,6 +17,7 @@ const ProductCards = () => {
         <>
          <CategorySecond/>
             <div className="container">
+                <div className="hero">
                 {
                     cards_product.map(el => (
                         <div className="meal">
@@ -36,6 +37,7 @@ const ProductCards = () => {
                         </div>
                     ))
                 }
+                </div>
             </div>
         </>
     );

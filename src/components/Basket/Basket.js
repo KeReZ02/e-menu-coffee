@@ -19,7 +19,7 @@ const Basket = () => {
                             <div>
                                 <h1 className="hero__global__text">Корзина пустая!</h1>
                             <Link to={`/`}>
-                                <button>Назад</button>
+                                <button className="basket-empty">Назад</button>
                             </Link>
                             </div>
                             :
@@ -40,7 +40,6 @@ const Basket = () => {
                                                     <h1>{el.title}</h1>
                                                 </div>
                                                 <div className="hero__box">
-                                                    <span>250мл</span>
                                                     <div className="hero__btn">
                                                         <button className="minus_btn"
                                                                 onClick={() => dispatch({

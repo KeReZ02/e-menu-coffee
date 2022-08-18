@@ -12,11 +12,13 @@ const CategorySecond = () => {
     }, [dispatch])
     return (
         <>
+            <div className="hero">
             {
                 categories.map(el => (
             <CategorySecondCard sec={el} key={el.id}/>
                 ))
             }
+            </div>
         </>
     );
 };
