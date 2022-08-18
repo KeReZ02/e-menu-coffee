@@ -1,0 +1,89 @@
+.category {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &-card {
+    width: 250px;
+    margin: 20px;
+    height: 200px;
+  }
+  &-img {
+    width: 250px;
+    height: 200px;
+  }
+  &-title {
+    margin-top: -40px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+  }
+  &-btn {
+    width: 160px;
+    height: 45px;
+    margin: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 15px;
+    background: transparent;
+    border: 3px solid #000000;
+    border-radius: 20px;
+  }
+}
+
+
+.meal {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  &-card {
+    width: 192px;
+    height: 257px;
+    margin: 20px;
+    border-radius: 10px;
+    background: #000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  &-img {
+    width: 192px;
+    border-radius: 10px;
+    height: 128px;
+  }
+  &-info {
+    margin-top: 10px;
+    &-block {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      margin-top: 25px;
+
+    }
+  }
+  &-title {
+    font-weight: 500;
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 16px;
+  }
+  &-desc   {
+    font-weight: 600;
+    font-size: 12px;
+    margin-top: 15px;
+    margin-left: -15px;
+  }
+  &-btn {
+    width: 41px;
+    height: 41px;
+    background: #8B1D31;
+    border-radius: 10px;
+  }
+  &-basket {
+    width: 20px;
+    height: 20px;
+    color: #ffffff;
+  }
+}

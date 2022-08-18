@@ -1,16 +1,20 @@
 import {Route, Routes} from "react-router-dom";
-import './style/Reset.scss';
-import Home from "./components/pages/Home";
-import ProductCards from "./components/ProductCards";
-import SearchProducts from "./components/SerchProducts";
+import './styles/reset.scss';
+import Home from "./components/Hero/Hero";
+import ProductCards from "./components/Cards/MealCard";
+import SearchProducts from "./components/Search/Search";
+import Basket from "./components/Basket/Basket";
+import Header from "./components/Header/Header";
 
 function App() {
     return (
         <>
+            <Header/>
             <Routes>
-                <Route path={"/"} element={<Home/>}/>
+                <Route path={'/'} element={<Home/>}/>
                 <Route path={'/products/:id'} element={<ProductCards/>}/>
                 <Route path={'/search-results/:search'} element={<SearchProducts/>}/>
+                <Route path={'/basket'} element={<Basket/>}/>
             </Routes>
         </>
     );
