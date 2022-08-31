@@ -3,8 +3,9 @@ import {useSelector} from "react-redux";
 import {Link, useNavigate} from "react-router-dom";
 import logo from '../../assets/images/image 1.png';
 import Basket from "../Basket/Basket";
-import {BiSearch} from "react-icons/bi";
-import {BsBasket} from "react-icons/bs";
+import {BiDish, BiSearch} from "react-icons/bi";
+import {BsAspectRatioFill, BsBasket, BsBasket2Fill, BsFillCalendarMonBsBsFillCloudMoonFill, MoonBsCloudMoonF, BsCloudMoonFillill, BsMoonFill} from "react-icons/bs";
+import { RiCameraSwitchLine, RiCustomerService2Fill, RiOrderPlayFill, RiServiceFill, RiSwitchFill } from 'react-icons/ri';
 
 const Header = () => {
     const [search, setSearch] = useState('')
@@ -29,17 +30,29 @@ const Header = () => {
                 <div className="container">
                     <div className="header">
                     <div className="header-nav">
-                        <Link to={'/'} className="">
+                        <Link to={'/'} className="header-nav-link">
                             <img src={logo} className="" alt=""/>
-                            {/*<h1 className="header-title">Coffee House</h1>*/}
+                            {<h1 className="header-nav-link-title">Coffee House</h1>}
                         </Link>
                     </div>
-                        <input type="text"
+                    <div class=" header-input">
+            
+                        <input type="header-text"
                                onChange={handleChange}
                                onKeyDown={handleKeyPress}
-                               placeholder="Поиск..." className="header-input"/>
+                               placeholder="Поиск..." className="header-input"
+                               />
+                                <BiSearch className="header-searchLogo"/>
+                               </div>
+                        <Link to={'/'}>
+                        
+                            <BiDish className="header-dishLogo"/>
+                           </Link>
+                        <Link to={'/'}>
+                        <BsMoonFill className="header-moonLogo"/>
+                             </Link>
                         <Link to={'/basket'}>
-                            <BsBasket className="header-basketLogo"/>
+                            <BsBasket2Fill className="header-basketLogo"/>
                             <span style={basket.length ? {display: ''} : {display: "none"}}
                                   className="">{basket.length ? `${basket.length}` : ''}</span>
                         </Link>

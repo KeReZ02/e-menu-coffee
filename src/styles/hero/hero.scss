@@ -3,8 +3,11 @@
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
+;
 }
-
+.container-hero{
+  width: 1300px;
+}
 
 .category {
    &-global {
@@ -21,13 +24,15 @@
   &-img {
     width: 250px;
     height: 200px;
+    border-radius: 5px  ;
   }
   &-title {
     margin-top: -40px;
     text-align: center;
     font-weight: 600;
     font-size: 18px;
-    color: white;
+    color: rgb(255, 255, 255);
+    box-shadow: 1px 3px 24px 4px rgba(6, 6, 6, 0.2);
   }
 
 }
@@ -43,15 +48,24 @@
     color: white;
   }
   &-btn {
-    width: 160px;
-    height: 45px;
-    margin: 10px;
+    width: 105px;
+    height: 35px;
+    margin:40px 6px;
     cursor: pointer;
-    font-weight: 500;
-    font-size: 15px;
+    font-family: "Montserrat",sans-serif    ;
+    font-weight: 700;
     background: transparent;
-    border: 3px solid #000000;
+    border: 1px solid #8B1D31;
     border-radius: 20px;
+    font-size: 13px;
+    line-height: 15px;
+/* identical to box height */
+&:hover{
+  background: #8B1D31;
+  color: #fff;
+}
+
+color: #000000;
   }
 }
 
@@ -66,11 +80,11 @@
     height: 257px;
     margin: 20px;
     border-radius: 10px;
-    background: #000;
+    background: #fff;
     color: white;
     display: flex;
     flex-direction: column;
-  }
+    box-shadow: -2px 4px 22px 0px rgba(34, 60, 80, 0.2);  }
   &-img {
     width: 192px;
     border-radius: 10px;
@@ -90,23 +104,34 @@
     font-weight: 500;
     margin-top: 10px;
     margin-left: 15px;
-    font-size: 16px;
+    font-weight: 700;
+font-size: 14px;
+line-height: 17px;
+
+color: #000000;
   }
   &-desc   {
     font-weight: 600;
     font-size: 12px;
     margin-top: 15px;
     margin-left: -15px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    
+    color: #000000;
   }
   &-btn {
     width: 41px;
     height: 41px;
     background: #8B1D31;
     border-radius: 10px;
+    border: none;
   }
   &-basket {
     width: 20px;
     height: 20px;
     color: #ffffff;
+    border: none;
   }
 }

@@ -1,36 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Charis+SIL&family=Forum&family=Lato:wght@300&family=Montserrat:ital,wght@0,200;0,600;1,400&family=Noto+Sans:wght@400;700&family=Roboto+Flex:opsz@8..144&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 #header{
  padding-top: 30px;
  .header {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  &-nav{
+    &-link{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    
+  
   &-title {
-   color: #000;
-   //@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
-   //font-family: 'Lobster', sans-serif;
+@import url(https://fonts.gstatic.com/s/lobster/v22/neILzCirqoswsqX9zo-mM5Ez.woff2);
    font-weight: 400;
-   //margin-left: 80px;
+   font-family: 'Lobster',sans-serif;
    font-size: 24px;
-   //margin-top: -45px;
+   line-height: 30px;
+   
+   color: #8B1D31;
   }
+}
+}
   //&-nav {
    //display: flex;
    //margin-left: -100px;
    //flex-direction: row;
   //}
-  &-input {
+  input {
    width: 515px;
    height: 50px;
    padding-left: 20px;
-   border: 3px solid #000;
+   border: 3px solid rgba(139, 29, 49, 1);
    font-size: 20px;
    border-radius: 30px;
+   color: rgb(59, 59, 59);
   }
+  &-dishLogo {
+    color: #8B1D31;
+    margin-top: 10px;
+    font-size:46px ;
+  
+ }
   &-basketLogo {
-   width: 30px;
-   height: 30px;
-   color: #000;
+   color: #8B1D31;
    margin-top: 10px;
+   font-size:38px ;
   }
+  &-moonLogo {
+    color: #8B1D31;
+    margin-top: 10px;
+    font-size:34px ;
+   }
+   &-searchLogo {
+    color: #8B1D31;
+    margin:0 0  -8px -50px ;
+    font-size:30px ;
+    
+   }
  }
 }
