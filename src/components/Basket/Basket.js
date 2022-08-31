@@ -17,7 +17,7 @@ const Basket = () => {
                     {
                         basket.length === 0 ?
                             <div>
-                                <h1 className="hero__global__text">Корзина пустая!</h1>
+                                <h1 className="basket__text">Ваша корзина пуста!</h1>
                             <Link to={`/`}>
                                 <button className="basket-empty">Назад</button>
                             </Link>
@@ -26,7 +26,7 @@ const Basket = () => {
                             <div className="basket__global">
                                 <div className="basket__global__first">
                                     <div>
-                                        <h1>Ваш счет</h1>
+                                        <h1 className='basket__global__first-title'>Ваш счет</h1>
                                     </div>
                                 </div>
                                 {
@@ -57,27 +57,32 @@ const Basket = () => {
                                                             +
                                                         </button>
                                                     </div>
-                                                    <span>{el.price * el.quantity}</span>
+                                                    <span>{el.price * el.quantity} сом</span>
                                                     <div className="hero__delete">
-                                                        <button className="" onClick={() => dispatch({
+                                                        <button className="hero__delete__btn" onClick={() => dispatch({
                                                             type: DELETE_FROM_BASKET,
                                                             payload: el.id
                                                         })}>
-                                                            <RiDeleteBin5Fill className="delete"/>
+                                                            <RiDeleteBin5Fill className="hero__delete__btn__button"/>
                                                         </button>
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div className="hero__global__input">
+                                    <input type="text" placeholder="Комментарии к заказу"/>
+                                </div>
                                         </div>
                                     ))
                                 }
-                                <div className="">
-                                    <input type="text" placeholder="Комментарии к заказу"
-                                           className="basket__global__input"/>
-                                </div>
+                               
                                 <div className="total">
                                     <h1>Итого: {totalSum} сомов</h1>
+                            
+                                    <div id="blue" data-color="#b3e5fc" onclick="changeColor('blue')">
                                     <button className="order">Заказать</button>
+                                    </div>
+                                    
+                                    
                                 </div>
                             </div>
 
@@ -87,5 +92,6 @@ const Basket = () => {
         </>
     );
 };
+
 
 export default Basket;

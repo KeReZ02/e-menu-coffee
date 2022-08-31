@@ -16,7 +16,7 @@ const ProductCards = () => {
     return (
         <>
          <CategorySecond/>
-            <div className="container">
+            <div className="container-hero">
                 <div className="hero">
                 {
                     cards_product.map(el => (
